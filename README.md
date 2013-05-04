@@ -94,3 +94,86 @@ carrinho.Transacao.Moeda = "BRL";
 //Envia carrinho
 Akatus.Carrinho.Retorno retorno = carrinho.processaTransacao();
 ```
+
+MEIOS DE PAGAMENTO
+=================
+
+OBTER OS MEIOS DE PAGAMENTO ATIVOS EM SUA CONTA AKATUS
+-----------------
+```c#
+
+Akatus.ConsultaMeiosPagamento.Consulta consulta = new Akatus.ConsultaMeiosPagamento.Consulta();
+
+//Consulta meios de pagamento
+List<Akatus.ConsultaMeiosPagamento.Retorno> retorno = consulta.consultaMeiosDePagamentoDisponiveis();
+```
+
+
+OPÇÕES DE PARCELAMENTO
+=================
+
+OBTER AS OPÇÕES DE PARCELAMENTO PARA UM DETERMINADO MEIO DE PAGAMENTO E VALOR DO PEDIDO
+-----------------
+```c#
+Akatus.ConsultaParcelamento.Consulta consulta = new Akatus.ConsultaParcelamento.Consulta();
+
+//Consulta opções de parcelamento
+Akatus.ConsultaParcelamento.Retorno retorno = consulta.consultaParcelamento(10.39m, Akatus.Enums.MeioDePagamento.cartao_visa);
+```
+
+CONSULTA STATUS
+=================
+
+OBTER O STATUS DE UMA TRANSAÇÃO
+-----------------
+```c#
+
+Akatus.ConsultaStatus.Consulta consulta = new Akatus.ConsultaStatus.Consulta();
+
+//Consulta status da transação
+Akatus.ConsultaStatus.Retorno retorno = consulta.consultaStatusTransacao("00000000-0000-0000-0000-0000000000");
+```
+
+NIP – NOTIFICAÇÃO INSTANTÂNEA DE PAGAMENTO
+=================
+
+RECEBE UMA NOTIFICAÇÃO DA AKATUS INFORMANDO A MUDANÇA DO STATUS DE PAGAMENTO DE UMA TRANSAÇÃO
+-----------------
+```c#
+//Pega parâmetros postados
+string token = Request.Form["token"];
+string transacao_id = Request.Form["transacao_id"];
+string status = Request.Form["status"];
+string referencia = Request.Form["referencia"];
+
+//Processa retono da transação
+Akatus.NotificacaoPagamento.Retorno retorno = Akatus.NotificacaoPagamento.Notificacao.processaRetorno(token, transacao_id, status, referencia);
+```
+
+TRATAMENTO DE ERROS
+=================
+
+-----------------
+```c#
+try
+{
+  //CODE
+}
+catch (Akatus.RestExcepction ex)
+{
+	//Show http status
+	Response.Write(ex.StatusCode);
+	Response.Write(ex.StatusDesciption);
+
+	//Show error messages
+	foreach (string error in ex.ErrorMessages)
+	{
+		Response.Write("<br />" + error);
+	}
+}
+catch (Exception ex) {
+	//Show exception message
+	Response.Write(ex);
+}
+```
+
