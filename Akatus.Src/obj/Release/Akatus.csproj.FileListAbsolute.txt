@@ -1,5 +1,0 @@
-C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\bin\Release\Akatus.dll
-C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\bin\Release\Akatus.pdb
-C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\obj\Release\Akatus.dll
-C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\obj\Release\Akatus.pdb
-C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\obj\Release\Akatus.csprojResolveAssemblyReference.cache
