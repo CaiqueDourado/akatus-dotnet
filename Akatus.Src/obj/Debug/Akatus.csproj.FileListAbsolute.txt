@@ -1,0 +1,10 @@
+C:\Users\Sony\Google Drive\Projetos\Labs\Akatus\Akatus.Src\bin\Debug\Akatus.dll
+C:\Users\Sony\Google Drive\Projetos\Labs\Akatus\Akatus.Src\bin\Debug\Akatus.pdb
+C:\Users\Sony\Google Drive\Projetos\Labs\Akatus\Akatus.Src\obj\Debug\Akatus.dll
+C:\Users\Sony\Google Drive\Projetos\Labs\Akatus\Akatus.Src\obj\Debug\Akatus.pdb
+C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\bin\Debug\Akatus.dll
+C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\bin\Debug\Akatus.pdb
+C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\obj\Debug\Akatus.dll
+C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\obj\Debug\Akatus.pdb
+C:\Users\Sony\Dropbox\ProjetoCupomVip\Akatus\obj\Debug\Akatus.csprojResolveAssemblyReference.cache
+C:\Users\Sony\Google Drive\Projetos\Labs\Akatus\Akatus.Src\obj\Debug\Akatus.csprojResolveAssemblyReference.cache
