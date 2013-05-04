@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akatus", "Akatus.Src\Akatus.csproj", "{6F3DF14F-6CBF-48C6-8F3F-7296C8C7B4C9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Akatus.Demo", "Akatus.Demo\", "{DE83FC83-0782-4F08-93BF-42B2CE90FB7D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{6F3DF14F-6CBF-48C6-8F3F-7296C8C7B4C9}|Akatus.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Akatus.Demo"
+		Debug.AspNetCompiler.PhysicalPath = "Akatus.Demo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Akatus.Demo\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Akatus.Demo"
+		Release.AspNetCompiler.PhysicalPath = "Akatus.Demo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Akatus.Demo\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "46067"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F3DF14F-6CBF-48C6-8F3F-7296C8C7B4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3DF14F-6CBF-48C6-8F3F-7296C8C7B4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3DF14F-6CBF-48C6-8F3F-7296C8C7B4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3DF14F-6CBF-48C6-8F3F-7296C8C7B4C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE83FC83-0782-4F08-93BF-42B2CE90FB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE83FC83-0782-4F08-93BF-42B2CE90FB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE83FC83-0782-4F08-93BF-42B2CE90FB7D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE83FC83-0782-4F08-93BF-42B2CE90FB7D}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
