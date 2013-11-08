@@ -69,9 +69,9 @@ carrinho.Produtos.Add(produto);
 
 //Forma de Pagamento (Boleto)
 //carrinho.Transacao.MeioDePagamento = Akatus.Enums.MeioDePagamento.boleto;
-//carrinho.Transacao.DescontoTotal = 0;
-//carrinho.Transacao.PesoTotal = 0;
-//carrinho.Transacao.FreteTotal = 0;
+//carrinho.Transacao.Desconto = 0;
+//carrinho.Transacao.Peso = 0;
+//carrinho.Transacao.Frete = 0;
 //carrinho.Transacao.Moeda = "BRL";
 //carrinho.Transacao.Referencia = "OFP12345";
 
@@ -86,9 +86,9 @@ carrinho.Transacao.Cartao.Portador.Nome = "AUTORIZAR";
 carrinho.Transacao.Cartao.Portador.CPF = "721.726.663-78";
 carrinho.Transacao.Cartao.Portador.Portador.Telefone = "7199990000";
 
-carrinho.Transacao.DescontoTotal = 0;
-carrinho.Transacao.PesoTotal = 0;
-carrinho.Transacao.FreteTotal = 0;
+carrinho.Transacao.Desconto = 0;
+carrinho.Transacao.Peso = 0;
+carrinho.Transacao.Frete = 0;
 carrinho.Transacao.Moeda = "BRL";
 
 //Envia carrinho
