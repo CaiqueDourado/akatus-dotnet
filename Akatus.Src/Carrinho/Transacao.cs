@@ -18,9 +18,9 @@ namespace Akatus.Carrinho
     {
         #region Fields
 
-        private decimal _desconto_total;
-        private decimal _peso_total;
-        private decimal _frete_total;
+        private decimal _desconto;
+        private decimal _peso;
+        private decimal _frete;
         private string _moeda;
         private string _referencia;
         private Akatus.Enums.MeioDePagamento _meioDePagamento;
@@ -31,47 +31,47 @@ namespace Akatus.Carrinho
         #region Properties
 
         /// <summary>
-        /// Soma de todos os descontos de todos os produtos
+        /// Desconto dado para toda a transação (ao invés de desconto por produto)
         /// </summary>
-        public decimal DescontoTotal
+        public decimal Desconto
         {
             get
             {
-                return _desconto_total;
+                return _desconto;
             }
             set
             {
-                _desconto_total = value;
+                _desconto = value;
             }
         }
 
         /// <summary>
-        /// Soma do peso de todos os produtos
+        /// Peso geral para toda a transação (ao invés de peso específico por produto)
         /// </summary>
-        public decimal PesoTotal
+        public decimal Peso
         {
             get
             {
-                return _peso_total;
+                return _peso;
             }
             set
             {
-                _peso_total = value;
+                _peso = value;
             }
         }
 
         /// <summary>
-        /// Soma do valor de todos os fretes dos produtos
+        /// Frete para toda a transação (ao invés de ser específico por produto)
         /// </summary>
-        public decimal FreteTotal
+        public decimal Frete
         {
             get
             {
-                return _frete_total;
+                return _frete;
             }
             set
             {
-                _frete_total = value;
+                _frete = value;
             }
         }
 

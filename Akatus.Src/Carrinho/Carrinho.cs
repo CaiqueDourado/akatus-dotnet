@@ -404,14 +404,14 @@ namespace Akatus.Carrinho
                                 {
                                     #region Boleto ou Cartão de Débito
 
-                                    //Adiciona elemento 'desconto_total'
-                                    writer.WriteElementString("desconto_total", Akatus.Util.formatCurrency(this.Transacao.DescontoTotal));
+                                    //Adiciona elemento 'desconto'
+                                    writer.WriteElementString("desconto", Akatus.Util.formatCurrency(this.Transacao.Desconto));
 
-                                    //Adiciona elemento 'peso_total'
-                                    writer.WriteElementString("peso_total", Akatus.Util.formatCurrency(this.Transacao.PesoTotal));
+                                    //Adiciona elemento 'peso'
+                                    writer.WriteElementString("peso", Akatus.Util.formatCurrency(this.Transacao.Peso));
 
-                                    //Adiciona elemento 'frete_total'
-                                    writer.WriteElementString("frete_total", Akatus.Util.formatCurrency(this.Transacao.FreteTotal));
+                                    //Adiciona elemento 'frete'
+                                    writer.WriteElementString("frete", Akatus.Util.formatCurrency(this.Transacao.Frete));
 
                                     //Adiciona elemento 'moeda' (O único valor aceito hoje é BRL)
                                     writer.WriteElementString("moeda", this.Transacao.Moeda);
@@ -444,14 +444,14 @@ namespace Akatus.Carrinho
                                     //Adiciona elemento 'expiracao'
                                     writer.WriteElementString("expiracao", this.Transacao.Cartao.Expiracao);
 
-                                    //Adiciona elemento 'desconto_total'
-                                    writer.WriteElementString("desconto_total", Akatus.Util.formatCurrency(this.Transacao.DescontoTotal));
+                                    //Adiciona elemento 'desconto'
+                                    writer.WriteElementString("desconto", Akatus.Util.formatCurrency(this.Transacao.Desconto));
 
-                                    //Adiciona elemento 'peso_total'
-                                    writer.WriteElementString("peso_total", Akatus.Util.formatCurrency(this.Transacao.PesoTotal));
+                                    //Adiciona elemento 'peso'
+                                    writer.WriteElementString("peso", Akatus.Util.formatCurrency(this.Transacao.Peso));
 
-                                    //Adiciona elemento 'frete_total'
-                                    writer.WriteElementString("frete_total", Akatus.Util.formatCurrency(this.Transacao.FreteTotal));
+                                    //Adiciona elemento 'frete'
+                                    writer.WriteElementString("frete", Akatus.Util.formatCurrency(this.Transacao.Frete));
 
                                     //Adiciona elemento 'moeda' (O único valor aceito hoje é BRL)
                                     writer.WriteElementString("moeda", this.Transacao.Moeda);
